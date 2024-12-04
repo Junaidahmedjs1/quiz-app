@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00bcd4, #8bc34a);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+
+
+.quiz-container {
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    animation: slideIn 1s ease-out forwards;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+
+#quiz {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    animation: fadeIn 1s ease-out 1s forwards;
+}
+
+
+label {
+    font-size: 1.1rem;
+    color: #555;
+    display: inline-flex; 
+    align-items: center;  
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s ease;
+    animation: fadeIn 1s ease-out 1.5s forwards;
+}
+
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s ease;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out 2s forwards;
+}
+
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+#result {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out 2.5s forwards;
+}
+
+
+button[type="button"] {
+    background-color: #f44336;
+    margin-top: 15px;
+    animation: fadeIn 1s ease-out 3s forwards;
+}
+
+
+button[type="button"]:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
